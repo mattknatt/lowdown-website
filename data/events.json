@@ -1,0 +1,49 @@
+{
+    "events": [
+    {
+        "eventName": "Lowdown 1",
+        "eventArtists" : "Ebbot Lundberg & Ludwig Hart",
+        "eventDate" : "Dec 6 2024"
+    },
+    {
+        "eventName": "Lowdown 2",
+        "eventArtists": "Henning & Klara Keller",
+        "eventDate": "Feb 8 2025"
+    },
+    {
+        "eventName": "Lowdown 3",
+        "eventArtists": "Sarah Klang & Jelly Crystal",
+        "eventDate": "May 25 2025"
+    },
+    {
+        "eventName": "Lowdown 4",
+        "eventArtists": "Arvid Nero & Hanna Järver",
+        "eventDate": "Aug 23 2025"
+    },
+    {
+        "eventName": "Lowdown 5",
+        "eventArtists": "Maja Francis & Mira Ray",
+        "eventDate": "Oct 25 2025"
+    },
+    {
+        "eventName": "Lowdown 6",
+        "eventArtists": "Karl Sundström & The Tarantula Waltz",
+        "eventDate": "Dec 6 2025"
+    },
+    {
+        "eventName": "Lowdown 7",
+        "eventArtists": "Johan Airijoki & Vilma Flood",
+        "eventDate": "Feb 28 2026"
+    },
+    {
+        "eventName": "Lowdown 8",
+        "eventArtists": "Kasino & Maria Andersson",
+        "eventDate": "April 18 2026"
+    },
+    {
+        "eventName": "Lowdown 9 ( Special Edition )",
+        "eventArtists": "Thomas Öberg & Sarah Klang",
+        "eventDate": "Aug 21 2026"
+    }
+]
+}
