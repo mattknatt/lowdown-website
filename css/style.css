@@ -54,7 +54,7 @@ h1 {
   display: block;
   font-family: "Rubik", sans-serif;
   color: #f2dd72;
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
@@ -63,7 +63,7 @@ h1 {
 }
 
 #intro h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 #intro p {
@@ -82,7 +82,7 @@ h1 {
 }
 
 .about a {
-  font-size: 20px;
+  font-size: 17px;
   color: #f2dd72;
   text-align: center;
   display: block;
@@ -102,7 +102,7 @@ h1 {
 
 h2 {
   color: #f5f5f5;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -157,7 +157,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-width: 400px;
+  max-width: 70%;
   margin: 0 auto 40px;
   padding: 25px;
   background-color: rgba(12, 12, 12, 0.6);
@@ -167,7 +167,7 @@ main {
 
 .contact legend {
   color: #f2dd72;
-  font-size: 20px;
+  font-size: 14px;
   text-transform: uppercase;
   padding: 0 8px;
 }
@@ -175,7 +175,7 @@ main {
 .contact label {
   display: block;
   color: #f5f5f5;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 4px;
 }
@@ -185,7 +185,7 @@ main {
   width: 100%;
   padding: 10px 12px;
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   border: 1px solid #f2dd72;
   border-radius: 6px;
   background-color: #f5f5f5;
@@ -210,7 +210,6 @@ main {
   color: #0c0c0c;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -219,7 +218,7 @@ main {
 }
 
 footer {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -242,7 +241,7 @@ footer a {
   color: #f2dd72;
 }
 .event {
-  font-size: 30px;
+  font-size: 22px;
   margin: 10px auto;
 }
 
@@ -260,7 +259,7 @@ footer a {
 }
 
 .wished_artist {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   background-color: #665f73;
   color: #f5f5f5;
@@ -329,6 +328,18 @@ footer a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  #intro h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
   .nav-links {
     display: flex;
     flex-direction: row;
@@ -338,8 +349,40 @@ footer a {
     display: none;
   }
 
+  .event {
+    font-size: 30px;
+  }
+
+  .about a {
+    font-size: 20px;
+  }
+
   .previous_events {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact {
+    max-width: 350px;
+  }
+
+  .contact label {
+    font-size: 16px;
+  }
+
+  #formWishlist {
+    max-width: 300px;
+  }
+
+  .wishlist_artists {
+    max-width: 300px;
+  }
+
+  .wished_artist {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 20px;
   }
 }
 
@@ -354,9 +397,17 @@ footer a {
     display: none;
   }
 
+  #intro h1 {
+    font-size: 60px;
+  }
+
   h1 {
     font-size: 50px;
     margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 25px;
   }
 
   p {
@@ -366,6 +417,14 @@ footer a {
   #intro p {
     font-size: 22px;
     margin-bottom: 70px;
+  }
+
+  .event {
+    font-size: 30px;
+  }
+
+  .about a {
+    font-size: 20px;
   }
 
   .grid-container {
@@ -381,7 +440,27 @@ footer a {
     max-width: 75%;
   }
 
+  .contact {
+    max-width: 400px;
+  }
+
+  .contact label {
+    font-size: 16px;
+  }
+
   #formWishlist {
     max-width: 400px;
+  }
+
+  .wishlist_artists {
+    max-width: 350px;
+  }
+
+  .wished_artist {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 20px;
   }
 }
