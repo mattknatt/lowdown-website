@@ -2,6 +2,7 @@ const elFormWishlist = document.querySelector('#formWishlist');
 const elArtist = document.querySelector('#txtArtist');
 const elCountry = document.querySelector('#txtCountry')
 const elWishedArtists = document.querySelector('.wishlist_artists')
+const elError = document.querySelector('#error')
 
 const artists = [{
         name : 'Kurt Vile',
@@ -45,8 +46,22 @@ function addArtist(event) {
     event.preventDefault();
 
     let storedArtists = JSON.parse(localStorage.getItem('wishedArtists'));
-    const artist = elArtist.value;
-    const country = elCountry.value;
+    const artist = elArtist.value.trim();
+    const country = elCountry.value.trim();
+
+    // Validering: kräver minst 2 tecken i varje fält
+    if (artist.length < 2) {
+        elError.textContent = "Artistnamnet måste vara minst 2 tecken.";
+        return;
+    }
+
+    if (country.length < 2) {
+        elError.textContent = "Landet måste vara minst 2 tecken.";
+        return;
+    }
+
+    // Allt giltigt — rensa ev. tidigare felmeddelande
+    elError.textContent = "";
 
     storedArtists.push({"name" : artist, "country" : country});
 

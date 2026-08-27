@@ -6,7 +6,6 @@
 }
 
 body {
-    /*background-color: #0C0C0C;*/
     background-image: url(../img/paper-bg.png);
     background-attachment: fixed;
     font-family: 'Rubik', sans-serif;
@@ -15,24 +14,61 @@ body {
 nav {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 nav a {
     flex: 1;
     padding: 10px;
-    color: #c4c05f;
+    font-size: 16px;
+    color: #F5F5F5;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    background-color: rgba(12, 12, 12, 0.7);
+}
+
+.nav-toggle {
+    padding: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    background-color: rgba(12, 12, 12, 0.7);
+    border: none;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+a:hover {
+    color: #a172f2
 }
 
 h1 {
+    display: block;
     font-family: 'Rubik', sans-serif;
-    color: #F5F5F5;
-    font-size: 30px;
+    color: #F2DD72;
+    font-size: 45px;
     text-align: center;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 1.5rem;
+    max-width: 80%;
+}
+
+#intro h1 {
+    font-size: 60px;
+}
+
+#intro p {
+    margin-bottom: 60px;
+    font-style: italic;
 }
 
 .about {
@@ -47,10 +83,14 @@ h1 {
 
 .about a {
     font-size: 20px;
-    color:#c4c05f;
+    color:#F2DD72;
     text-align: center;
     display: block;
     margin-bottom: 2rem;
+}
+
+.about a:hover{
+    color: #a172f2;
 }
 
 #intro img{
@@ -61,11 +101,11 @@ h1 {
 }
 
 h2 {
-    font-family: 'Libre Baskerville', serif;
     color: #F5F5F5;
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 p {
@@ -74,7 +114,7 @@ p {
     color: #F5F5F5;
     text-align: center;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 80%;
 }
 
 #events button {
@@ -90,14 +130,14 @@ p {
 }
 
 .grid-container{
-    max-width: 90%;
+    max-width: 75%;
     margin: 40px auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "main-content";
     grid-template-rows: auto auto;
-    grid-gap: 20px;
+    grid-gap: 40px;
 }
 
 main {
@@ -111,20 +151,72 @@ main {
 
 .youtube-link {
         width: 100%;
-        height: 350px;
+        aspect-ratio: 16 / 9;
 }
 
-.contact{
-    color: #c4c05f;
-    padding: 20px;
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto 40px;
+    padding: 25px;
+    background-color: rgba(12, 12, 12, 0.6);
+    border: none;
+    border-radius: 12px;
 }
 
-.contact input {
-    margin-bottom: 10px;
+.contact legend {
+    color: #F2DD72;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 8px;
 }
 
 .contact label {
-    
+    display: block;
+    color: #F5F5F5;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.contact input[type="text"],
+.contact textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    border: 1px solid #F2DD72;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    color: #0C0C0C;
+    box-sizing: border-box;
+}
+
+.contact input[type="text"]:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #F5F5F5;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F2DD72;
+    color: #0C0C0C;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #F5F5F5;
 }
 
 footer {
@@ -134,7 +226,7 @@ footer {
 }
 
 footer a {
-    color: #c4c05f;
+    color: #F2DD72;
 }
 
 .previous_events {
@@ -145,8 +237,14 @@ footer a {
     grid-gap: 20px;
 }
 
+.previous_events h2 {
+    font-size: 25px;
+    font-family: Rubik, sans-serif;
+    color:#F2DD72;
+}
 .event {
-    
+    font-size: 30px;
+    margin: 10px auto;
 }
 
 .event-date {
@@ -156,35 +254,123 @@ footer a {
 .wishlist_artists {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 60%;
     margin: 0 auto;
     gap: 15px;
+    margin-bottom: 30px;
 }
 
 .wished_artist {
-    font-size: px;
+    font-size: 18px;
     text-align: center;
-    background-color: #c4c05f;
-    color: #0C0C0C;
+    background-color: #665F73;
+    color: #F5F5F5;
     padding: 15px 20px;
-    border-radius: 12px;   
+    border-radius: 12px;
+    margin-bottom: 10px;
+
 }
 
-@media screen and (min-width: 1024px) {
-    nav {
+#formWishlist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 60%;
+    margin: 0 auto 40px;
+    padding: 25px;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 12px;
+}
+
+#formWishlist label {
+    display: block;
+    color: #F5F5F5;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+#formWishlist input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    border: 1px solid #F2DD72;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    color: #0C0C0C;
+    box-sizing: border-box;
+}
+
+#formWishlist input[type="text"]:focus {
+    outline: none;
+    border-color: #F5F5F5;
+}
+
+#formWishlist input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F2DD72;
+    color: #0C0C0C;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+#formWishlist input[type="submit"]:hover {
+    background-color: #F5F5F5;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .nav-links {
+        display: flex;
         flex-direction: row;
     }
 
-    nav a {
-        flex: 1;
+    .nav-toggle {
+        display: none;
+    }
+
+    .previous_events {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    .nav-toggle {
+        display: none;
     }
 
     h1 {
         font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        max-width: 600px;
     }
 
     #intro p{
-        font-size: 20px;
+        font-size: 22px;
+        margin-bottom: 70px;
 
     }
     
@@ -195,6 +381,15 @@ footer a {
 
     #intro img {
         max-width: 25%;
+    }
+
+    .previous_events {
+        grid-template-columns: 1fr 1fr;
+        max-width: 75%;
+    }
+
+    #formWishlist {
+        max-width: 400px;
     }
 
 }
