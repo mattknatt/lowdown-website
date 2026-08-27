@@ -1,395 +1,387 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    background-image: url(../img/paper-bg.png);
-    background-attachment: fixed;
-    font-family: 'Rubik', sans-serif;
+  background-image: url(../img/paper-bg.png);
+  background-attachment: fixed;
+  font-family: "Rubik", sans-serif;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
 }
 
 nav a {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    color: #F5F5F5;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: rgba(12, 12, 12, 0.7);
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgba(12, 12, 12, 0.7);
 }
 
 .nav-toggle {
-    padding: 12px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #F5F5F5;
-    background-color: rgba(12, 12, 12, 0.7);
-    border: none;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  background-color: rgba(12, 12, 12, 0.7);
+  border: none;
 }
 
 .nav-links {
-    display: none;
-    flex-direction: column;
+  display: none;
+  flex-direction: column;
 }
 
 .nav-links.open {
-    display: flex;
+  display: flex;
 }
 
 a:hover {
-    color: #a172f2
+  color: #a172f2;
 }
 
 h1 {
-    display: block;
-    font-family: 'Rubik', sans-serif;
-    color: #F2DD72;
-    font-size: 45px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 1.5rem;
-    max-width: 80%;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  color: #f2dd72;
+  font-size: 45px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
 }
 
 #intro h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 #intro p {
-    margin-bottom: 60px;
-    font-style: italic;
+  margin-bottom: 60px;
+  font-style: italic;
 }
 
 .about {
-    max-width: 90%;
-    display: block;
-    margin: 0 auto;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
-.about p{
-    margin-bottom: 1.5rem;
+.about p {
+  margin-bottom: 1.5rem;
 }
 
 .about a {
-    font-size: 20px;
-    color:#F2DD72;
-    text-align: center;
-    display: block;
-    margin-bottom: 2rem;
+  font-size: 20px;
+  color: #f2dd72;
+  text-align: center;
+  display: block;
+  margin-bottom: 2rem;
 }
 
-.about a:hover{
-    color: #a172f2;
+.about a:hover {
+  color: #a172f2;
 }
 
-#intro img{
-    max-width: 60%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+#intro img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 h2 {
-    color: #F5F5F5;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+  color: #f5f5f5;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #F5F5F5;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 80%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f5f5f5;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 #events button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #F5F5F5;
-    color: #0C0C0C;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: #0c0c0c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.grid-container{
-    max-width: 75%;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "main-content";
-    grid-template-rows: auto auto;
-    grid-gap: 40px;
+.grid-container {
+  max-width: 75%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main-content";
+  grid-template-rows: auto auto;
+  grid-gap: 40px;
 }
 
 main {
-    grid-area: main-content;
+  grid-area: main-content;
 }
 
 .main-img {
-        width: 100%;
-        height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .youtube-link {
-        width: 100%;
-        aspect-ratio: 16 / 9;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 400px;
-    margin: 0 auto 40px;
-    padding: 25px;
-    background-color: rgba(12, 12, 12, 0.6);
-    border: none;
-    border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  padding: 25px;
+  background-color: rgba(12, 12, 12, 0.6);
+  border: none;
+  border-radius: 12px;
 }
 
 .contact legend {
-    color: #F2DD72;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 0 8px;
+  color: #f2dd72;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0 8px;
 }
 
 .contact label {
-    display: block;
-    color: #F5F5F5;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 4px;
+  display: block;
+  color: #f5f5f5;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .contact input[type="text"],
 .contact textarea {
-    width: 100%;
-    padding: 10px 12px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    border: 1px solid #F2DD72;
-    border-radius: 6px;
-    background-color: #F5F5F5;
-    color: #0C0C0C;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  border: 1px solid #f2dd72;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  color: #0c0c0c;
+  box-sizing: border-box;
 }
 
 .contact input[type="text"]:focus,
 .contact textarea:focus {
-    outline: none;
-    border-color: #F5F5F5;
+  outline: none;
+  border-color: #f5f5f5;
 }
 
 .contact textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .contact input[type="submit"] {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #F2DD72;
-    color: #0C0C0C;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f2dd72;
+  color: #0c0c0c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .contact input[type="submit"]:hover {
-    background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 footer {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 footer a {
-    color: #F2DD72;
+  color: #f2dd72;
 }
 
 .previous_events {
-    display: grid;
-    max-width: 90%;
-    margin: 40px auto;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+  display: grid;
+  max-width: 90%;
+  margin: 40px auto;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
 }
 
 .previous_events h2 {
-    font-size: 25px;
-    font-family: Rubik, sans-serif;
-    color:#F2DD72;
+  font-size: 25px;
+  font-family: Rubik, sans-serif;
+  color: #f2dd72;
 }
 .event {
-    font-size: 30px;
-    margin: 10px auto;
+  font-size: 30px;
+  margin: 10px auto;
 }
 
 .event-date {
-    font-style: italic;
+  font-style: italic;
 }
 
 .wishlist_artists {
-    display: flex;
-    flex-direction: column;
-    max-width: 60%;
-    margin: 0 auto;
-    gap: 15px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .wished_artist {
-    font-size: 18px;
-    text-align: center;
-    background-color: #665F73;
-    color: #F5F5F5;
-    padding: 15px 20px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-
+  font-size: 18px;
+  text-align: center;
+  background-color: #665f73;
+  color: #f5f5f5;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
 #formWishlist {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 60%;
-    margin: 0 auto 40px;
-    padding: 25px;
-    background-color: rgba(12, 12, 12, 0.6);
-    border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 60%;
+  margin: 0 auto 40px;
+  padding: 25px;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 12px;
 }
 
 #formWishlist label {
-    display: block;
-    color: #F5F5F5;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 4px;
+  display: block;
+  color: #f5f5f5;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 #formWishlist input[type="text"] {
-    width: 100%;
-    padding: 10px 12px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    border: 1px solid #F2DD72;
-    border-radius: 6px;
-    background-color: #F5F5F5;
-    color: #0C0C0C;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  border: 1px solid #f2dd72;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  color: #0c0c0c;
+  box-sizing: border-box;
 }
 
 #formWishlist input[type="text"]:focus {
-    outline: none;
-    border-color: #F5F5F5;
+  outline: none;
+  border-color: #f5f5f5;
 }
 
 #formWishlist input[type="submit"] {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #F2DD72;
-    color: #0C0C0C;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f2dd72;
+  color: #0c0c0c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 30px;
 }
 
 #formWishlist input[type="submit"]:hover {
-    background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .error {
-    color: #ff6b6b;
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
+  color: #ff6b6b;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-    }
+  .nav-toggle {
+    display: none;
+  }
 
-    .nav-toggle {
-        display: none;
-    }
-
-    .previous_events {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
+  .previous_events {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 100px;
-    }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
 
-    .nav-toggle {
-        display: none;
-    }
+  .nav-toggle {
+    display: none;
+  }
 
-    h1 {
-        font-size: 50px;
-        margin-bottom: 50px;
-    }
+  h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
 
-    p {
-        max-width: 600px;
-    }
+  p {
+    max-width: 600px;
+  }
 
-    #intro p{
-        font-size: 22px;
-        margin-bottom: 70px;
+  #intro p {
+    font-size: 22px;
+    margin-bottom: 70px;
+  }
 
-    }
-    
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .grid-container{
-        grid-template-columns: 1fr 1fr;
-    }
+  #intro img {
+    max-width: 25%;
+  }
 
-    #intro img {
-        max-width: 25%;
-    }
+  .previous_events {
+    grid-template-columns: 1fr 1fr;
+    max-width: 75%;
+  }
 
-    .previous_events {
-        grid-template-columns: 1fr 1fr;
-        max-width: 75%;
-    }
-
-    #formWishlist {
-        max-width: 400px;
-    }
-
+  #formWishlist {
+    max-width: 400px;
+  }
 }
